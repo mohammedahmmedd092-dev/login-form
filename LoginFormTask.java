@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 class User {
-    // ✅ تم إضافة الحقول المطلوبة
     private String username;
     private String password;
     private String role;
@@ -15,7 +14,6 @@ class User {
         this.role = role;
     }
 
-    // ✅ Getters
     public String getUsername() {
         return username;
     }
@@ -32,7 +30,6 @@ class User {
 class WelcomePage extends Frame {
 
     WelcomePage(User user) {
-        // ✅ بناء صفحة الترحيب
         super("Welcome");
         setLayout(new BorderLayout());
 
@@ -62,9 +59,9 @@ class WelcomePage extends Frame {
 
 public class LoginFormTask extends Frame {
 
-    // ✅ قائمة المستخدمين
+    
     private List<User> users;
-    private int failedAttempts = 0; // عداد المحاولات الفاشلة
+    private int failedAttempts = 0; 
     private static final int MAX_ATTEMPTS = 3;
 
     public LoginFormTask() {
